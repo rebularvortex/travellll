@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nepal - Places to Visit</title>
+
+<style>
+:root{
+  --bg:#000;
+  --card:#111;
+  --accent:#ff8c00;
+  --text:#fff;
+  --muted:#b8b8b8;
+  --radius:16px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #151515 0%, var(--bg) 60%);
+  color:var(--text);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+/* FULL WIDTH WRAPPER */
+.container{
+  width:100%;
+  padding:40px clamp(16px, 5vw, 90px);
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.hero h1{
+  font-size:44px;
+  color:var(--accent);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.hero h1 img{
+  width:34px;
+  height:auto;
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:800px;
+  margin:12px auto 0;
+  font-size:15px;
+}
+
+/* SECTION TITLE */
+.title{
+  font-size:28px;
+  font-weight:800;
+  color:var(--accent);
+  margin:40px 0 20px;
+  padding-left:14px;
+  border-left:4px solid var(--accent);
+}
+
+/* FEATURED */
+.featured{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  align-items:center;
+  padding:24px;
+  border-radius:var(--radius);
+  background:linear-gradient(135deg,#111,#1a1208);
+  border:1px solid rgba(255,140,0,0.25);
+  margin-bottom:45px;
+}
+
+.featured img{
+  width:100%;
+  max-width:420px;
+  height:240px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.featured img:hover{
+  transform:scale(1.04);
+}
+
+.featured-text h2{
+  color:var(--accent);
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.featured-text p{
+  color:var(--muted);
+  max-width:600px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid #222;
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:0.25s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  transition:0.3s;
+}
+
+.card img:hover{
+  transform:scale(1.05);
+}
+
+.card-content{
+  padding:14px;
+}
+
+.card h3{
+  color:var(--accent);
+  margin-bottom:5px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:10px;
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:999px;
+  border:1px solid var(--accent);
+  color:#ffb86b;
+}
+
+/* FOOT NOTE */
+.note{
+  text-align:center;
+  margin-top:40px;
+  font-size:12px;
+  color:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>
+      Discover Nepal
+    </h1>
+    <p>Explore mountains, ancient cities, lakes, wildlife, and spiritual heritage across Nepal.</p>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="title"> Featured Destination</div>
+
+  <div class="featured">
+    <a href="https://en.wikipedia.org/wiki/Mount_Everest" target="_blank">
+      <img src="https://i.pinimg.com/736x/19/b2/74/19b274d1f2cf1c2fc90a111c1093eb94.jpg">
+    </a>
+
+    <div class="featured-text">
+      <h2>Everest Base Camp</h2>
+      <p>The world’s highest peak region and one of the most iconic trekking adventures on Earth.</p>
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="title"> All Destinations in Nepal</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Kathmandu" target="_blank">
+        <img src="https://i.pinimg.com/736x/c5/0a/6a/c50a6aabf92a1340ed361565aee8ae27.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Kathmandu</h3>
+        <p>Cultural and historical capital of Nepal.</p>
+        <span class="tag">Capital</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Pokhara" target="_blank">
+        <img src="https://i.pinimg.com/736x/be/b0/4d/beb04def8f004de1373e63470883812e.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Pokhara</h3>
+        <p>Lake city with Himalayan views.</p>
+        <span class="tag">Nature</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Lumbini" target="_blank">
+        <img src="https://i.pinimg.com/736x/cd/4f/05/cd4f0588787d88ff975aea1b78ec6d24.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Lumbini</h3>
+        <p>Birthplace of Lord Buddha.</p>
+        <span class="tag">Spiritual</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Chitwan_National_Park" target="_blank">
+        <img src="https://i.pinimg.com/736x/78/29/de/7829de83b0aadcd1aabb808c2a6355f0.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Chitwan</h3>
+        <p>Wildlife safari and jungle experience.</p>
+        <span class="tag">Nature</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Bandipur" target="_blank">
+        <img src="https://i.pinimg.com/1200x/ce/a8/75/cea875addd0ddfe96db3cb23543e6476.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Bandipur</h3>
+        <p>Preserved hilltop cultural town.</p>
+        <span class="tag">Culture</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Annapurna_Circuit" target="_blank">
+        <img src="https://i.pinimg.com/736x/9a/a2/55/9aa255396697e9e17758af2bcfbfbcd1.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Annapurna</h3>
+        <p>World-famous trekking circuit.</p>
+        <span class="tag">Adventure</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Patan,_Nepal" target="_blank">
+        <img src="https://i.pinimg.com/1200x/c5/da/70/c5da705b00dd9db47f4f067fbb9f873d.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Patan</h3>
+        <p>City of arts, temples, and heritage.</p>
+        <span class="tag">Heritage</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://en.wikipedia.org/wiki/Bhaktapur" target="_blank">
+        <img src="https://i.pinimg.com/736x/5b/23/64/5b2364faf85a5d36e9cb7e371e55d3a3.jpg">
+      </a>
+      <div class="card-content">
+        <h3>Bhaktapur</h3>
+        <p>Ancient Newari cultural city.</p>
+        <span class="tag">Culture</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">Made for educational travel project ✨</div>
+
+</div>
+
+</body>
+</html>

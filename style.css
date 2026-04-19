@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.places-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
+.section-title {
+  font-size: 34px;
+  color: #ff8c00;
+  margin-bottom: 30px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 15px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #111;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #ff8c00;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ff8c00;
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Featured */
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ff8c00;
+  margin-bottom: 30px;
+}
+
+.featured-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.featured-info h3 {
+  color: #ff8c00;
+}
+
+/* Cards */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #ff8c00;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #ff8c00;
+}
+
+/* Counter */
+.counter-box {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #ff8c00;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .places-container {
+    padding: 20px 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .featured {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

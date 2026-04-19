@@ -1,0 +1,203 @@
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+    background: #0a0a0a;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #f5f5f5;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 80px;
+
+    background: linear-gradient(
+        135deg,
+        #0a0a0a 0%,
+        #111111 60%,
+        #0a0a0a 100%
+    );
+
+    border-left: 5px solid #d96a00;
+    border-right: 5px solid #d96a00;
+}
+
+/* ===== HEADER ===== */
+.page-header {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.35);
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+
+    color: #ffffff;
+
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff7a00, transparent);
+}
+
+.section-subhead {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cfcfcf;
+    padding-left: 14px;
+    border-left: 3px solid #ff7a00;
+}
+
+/* ===== NAV ===== */
+.section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+
+.nav-badge {
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    background: rgba(255, 122, 0, 0.05);
+    border: 1px solid rgba(255, 122, 0, 0.5);
+
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+.nav-badge:hover {
+    background: rgba(255, 122, 0, 0.2);
+    border-color: #ff7a00;
+}
+
+.nav-badge.active {
+    background: #ff7a00;
+    color: #0a0a0a;
+    font-weight: 600;
+}
+
+/* ===== SECTION TITLES ===== */
+h2 {
+    font-size: 30px;
+    margin: 40px 0 20px;
+    color: #ff8a1f;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+/* subtle divider instead of heavy dashed */
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin-top: 6px;
+    background: linear-gradient(90deg, #ff7a00, transparent);
+}
+
+/* ===== LIST ===== */
+.tips-list {
+    list-style: none;
+}
+
+.tips-list li {
+    background: #141414;
+    margin-bottom: 16px;
+    padding: 18px 22px;
+
+    border-radius: 14px;
+    border-left: 4px solid #ff7a00;
+
+    font-size: 17px;
+    color: #eaeaea;
+
+    transition: 0.2s ease;
+}
+
+.tips-list li:hover {
+    background: #1a1a1a;
+    transform: translateX(4px);
+}
+
+/* ===== HIGHLIGHT TEXT ===== */
+.tip-highlight {
+    color: #ffb36b;
+    font-weight: 600;
+}
+
+/* ===== CALLOUT BOX ===== */
+.callout-box {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 122, 0, 0.08),
+        rgba(0, 0, 0, 0.6)
+    );
+
+    border: 1px solid rgba(255, 122, 0, 0.5);
+    border-radius: 16px;
+
+    padding: 25px;
+    margin: 40px 0;
+
+    color: #eaeaea;
+}
+
+.callout-box strong {
+    color: #ff9a3d;
+}
+
+/* ===== FOOTER ===== */
+.footer-note {
+    margin-top: 70px;
+    padding-top: 20px;
+
+    text-align: right;
+    font-size: 14px;
+
+    color: #999;
+
+    border-top: 1px solid rgba(255, 122, 0, 0.2);
+}
+
+.footer-note span {
+    color: #ff9a3d;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
